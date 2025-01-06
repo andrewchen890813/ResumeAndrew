@@ -1,0 +1,948 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LXGW WenKai Mono TC", monospace;
+  letter-spacing: 1px;
+  list-style: none;
+}
+
+body {
+  background-color: #ecf39e;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+/* header */
+.menu {
+  display: none;
+  box-shadow: #bc4749 10px 10px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px 0px;
+  background-color: #bc4749;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.logo a {
+  list-style: none;
+  text-decoration: none;
+  color: #f2e8cf;
+  /* width: 100%; */
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  /* background-color: aquamarine; */
+}
+
+.logo a:hover {
+  font-size: 32px;
+}
+
+.navbar-ul {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 0px;
+  /* border: 1px solid black; */
+}
+
+.navbar-ul li {
+  text-decoration: none;
+  list-style: none;
+  /* background-color: aqua; */
+}
+
+.navbar-ul li a {
+  text-decoration: none;
+  color: #f2e8cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+
+.navbar-ul li a:hover {
+  font-size: 20px;
+}
+
+/* banner */
+
+#banner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a7c957;
+  position: relative;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  background-position: 0 0;
+  animation: moveBackground 10s  linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -200px 0;
+  }
+}
+
+.donhua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.rect {
+  width: 50%;
+  height: 2%;
+  border-radius: 20px;
+  background-color: #31572c;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  position: absolute;
+  bottom: 10px;
+  transform: scale(0.5);
+  animation: rectconhua 5s ease-in-out both infinite alternate;
+}
+
+@keyframes rectconhua {
+  to {
+    transform: scale(1);
+  }
+}
+
+.sun {
+  position: absolute;
+  display: flex;
+  left: 28%;
+  top: 10%;
+  animation: sundonhua 20s ease-in-out infinite;
+}
+
+@keyframes sundonhua {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.sun>img {
+  width: 160px;
+}
+
+/* about */
+#about {
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+#about>.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.about-picture {
+  width: 38%;
+}
+
+.about-picture>img {
+  width: 100%;
+  box-shadow: -10px 10px 0px #bc4749;
+  border-radius: 20px;
+}
+
+.photo2 {
+  display: none;
+}
+
+.profile>p {
+  margin: 10px 0px;
+  line-height: 25px;
+  margin: 30px 0px;
+}
+
+.discription {
+  width: 50%;
+}
+
+.discription h2 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.education {
+  width: 100%;
+}
+
+.education-box {
+  width: 100%;
+  background-color: #f2e8cf;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 15px 30px;
+  margin: 30px 0px;
+  border-radius: 20px;
+  border: #f2e8cf 2px solid;
+  position: relative;
+}
+
+.education-box h4 {
+  position: relative;
+  top: 5px;
+}
+
+.education-box p {
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.education-department,
+.education-school {
+  margin-bottom: 5px;
+}
+
+.education-department {
+  font-size: 25px;
+}
+
+.skill-list p {
+  margin: 5px 0px;
+}
+
+/* experience */
+#experience {
+  /* margin: 50px 0px; */
+  background-color: #a7c957;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  position: relative;
+}
+
+.experience-work-list {
+  display: flex;
+  /* justify-content: last; */
+  align-items: center;
+  margin: 20px 0px;
+  padding: 20px 0px;
+  border-bottom: 1px solid #31572c;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* .experience-work-list:hover {
+  background-color: #6a994e;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+} */
+.experience-year {
+  margin-right: 100px;
+}
+
+.experience-logo>img {
+  height: 56px;
+  width: auto;
+}
+
+.experience-work {
+  margin: 20px 0px;
+  padding-bottom: 20px;
+}
+
+.experience-year {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 30px;
+}
+
+.experience-name {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bolder;
+  right: 30px;
+}
+
+.experience-work-list:last-child {
+  border-bottom: none;
+}
+
+#experience h2 {
+  padding-top: 20px;
+  /* background-color: #bc4749; */
+  font-size: 40px;
+}
+
+/* interest部分 */
+#interest {
+  position: relative;
+}
+
+#interest h2 {
+  padding-top: 50px;
+  font-size: 40px;
+  margin: 50px 0px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 180px);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card:nth-child(3) {
+  display: grid;
+  grid-area: 1/3/2/5;
+}
+
+.card:nth-child(7) {
+  display: grid;
+  grid-area: 2/2/3/4;
+}
+
+.card:nth-child(9) {
+  display: grid;
+  grid-area: 2/4/4/6;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.side {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.side img {
+  width: 100%;
+  height: 100%;
+  /* max-width: 100%; */
+  object-fit: cover;
+}
+
+.side-back {
+  color: #f2e8cf;
+  font-size: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  background-color: #bc4749;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  height: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  opacity: 1;
+
+  .side-back {
+    opacity: 1;
+    transition: 0.3s ease-in;
+  }
+}
+
+/* contact部分 */
+#contact {
+  background-color: #bc4749;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  color: #f2e8cf;
+  position: relative;
+  /* height: 500px; */
+}
+
+.left-contact a {
+  color: #f2e8cf;
+  text-decoration: none;
+}
+
+#contact h2 {
+  /* padding-top: 50px; */
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.left-contact p {
+  padding: 20px 0px;
+}
+
+.contact-information {
+  height: 100px;
+}
+
+.contact-information a {
+  padding: 10px;
+  font-size: 30px;
+  transition: 0.5s ease-in;
+}
+
+.contact-information a:hover {
+  /* background-color: #a7c957; */
+  font-size: 50px;
+}
+
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-contact {
+  width: 45%;
+  margin: 100px auto;
+}
+
+.right-contact {
+  width: 50%;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  background-color: #f2e8cf;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  border-radius: 20px;
+  color: #bc4749;
+  padding: 50px;
+  position: relative;
+  font-weight: bold;
+  height: 550px;
+}
+
+button {
+  background-color: #a7c957;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 30px;
+  margin-top: 20px;
+}
+
+button:hover {
+  font-size: 18px;
+  transition: 0.2s ease-in;
+}
+
+input,
+textarea,
+label {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 7px;
+  border: none;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  font-size: 50px;
+  right: 50px;
+  bottom: 105px;
+}
+
+.up a {
+  color: #386641;
+}
+
+.up:hover {
+  font-size: 60px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2e8cf;
+  background-color: black;
+  height: 80px;
+}
+
+/* illustration */
+.banner-illustration {
+  position: absolute;
+  left: 10%;
+}
+
+.banner-ill1 {
+  width: 40%;
+}
+
+.banner-illustration2 {
+  position: absolute;
+  right: 10%;
+}
+
+.banner-ill2 {
+  width: 200px;
+}
+
+.about-illustration {
+  position: absolute;
+  bottom: 0;
+}
+
+.about-illustration2 {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.about-ill1 {
+  bottom: 0;
+  width: 200px;
+}
+
+.experience-illustration1 {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  right: 0;
+  bottom: 0;
+}
+
+.experience-ill1 {
+  width: 50%;
+}
+
+.experience-illustration2 {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.experience-ill2 {
+  width: 40%;
+}
+
+.interest-illustration1 {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  display: flex;
+  justify-content: right;
+}
+
+.interest-ill1 {
+  width: 50%;
+}
+
+
+
+.contact-illustration1 {
+  position: absolute;
+  top: 0;
+}
+
+.contact-ill1 {
+  width: 70%;
+}
+
+.contact-illustration2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: right;
+}
+
+.contact-ill2 {
+  width: 30%;
+}
+
+.bird1 {
+  position: absolute;
+  animation: bird1ani ease-in-out 2s infinite alternate;
+}
+.birds2 {
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+  z-index: 1;
+}
+
+.bird6 {
+  animation: bird6ani ease-in-out 3s infinite alternate;
+}
+@keyframes bird6ani {
+  to {
+    transform: translateX(-30%) translateY(100px);
+  }
+}
+@keyframes bird1ani {
+  to {
+    transform: translateX(30%) translateY(-10%);
+  }
+}
+
+.bird2 {
+  position: absolute;
+  animation: bird2ani ease-in-out 4s infinite alternate;
+  bottom: 10%;
+  right: 10%;
+  z-index: 1;
+}
+
+@keyframes bird2ani {
+  to {
+    transform: translateX(80px) translateY(50%);
+  }
+}
+
+.birds {
+  position:absolute;
+  width: 100%;
+}
+
+.bird3 {
+  position: absolute;
+  animation: bird3ani ease-in-out 20s infinite alternate;
+  left: 50%;
+  z-index: 1;
+  bottom: 100%;
+}
+
+@keyframes bird3ani {
+  0% {
+    transform: translateX(10%) translateY(50px);
+  }
+
+  20% {
+    transform: translateX(30%) translateY(30px);
+  }
+
+  40% {
+    transform: translateX(80%) translateY(70px);
+    ;
+  }
+
+  60% {
+    transform: translateX(50%) translateY(200px);
+    ;
+  }
+
+  80% {
+    transform: translateX(80%) translateY(50px);
+    ;
+  }
+
+  100% {
+    transform: translateX(100%) translateY(100px);
+    ;
+  }
+}
+
+.bird4 {
+  position: absolute;
+  animation: bird3ani ease-in-out 10s infinite alternate;
+  z-index: 1;
+}
+#banner >.birds {
+  position: absolute;
+  top: 0  ;
+  /* display: flex; */
+  justify-content: center;
+}
+.bird7 {
+  position: absolute;
+  animation: bird7ani ease-in-out 3s infinite alternate;
+  z-index: 1;
+  /* width: 120px; */
+}
+@keyframes bird7ani {
+  to {
+    transform: translateX(40%) translateY(40px);
+  }
+}
+@media screen and (max-width: 1250px) {
+  .banner-ill1 {
+    width: 200px;
+  }
+
+  .about-ill1 {
+    width: 150px;
+  }
+
+
+  .contact-ill1 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  /* 平板 */
+  #header {
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .navbar-ul li {
+    width: 100%;
+    border-bottom: 1px solid #f2e8cf;
+    line-height: 40px;
+    /* height: 40px; */
+  }
+
+  .navbar-ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu {
+    display: flex;
+    margin: 15px;
+  }
+
+  .sun {
+    left: 20%;
+  }
+
+  .photo2 {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #experience .container {
+    display: flex;
+    position: relative;
+    padding: 10px;
+  }
+
+  #experience .container h2 {
+    position: absolute;
+    color: #f2e8cf;
+    font-size: 30px;
+    top: 0px;
+    right: 0px;
+    width: 98px;
+    background-color: #bc4749;
+    border-radius: 0px 0px 10px 10px;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    padding-top: 0px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .experience-work-list {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .experience-name {
+    position: relative;
+    width: 100%;
+    right: 0px;
+  }
+
+  .experience-year {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .experience-logo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .experience-illustration2 {
+    display: none;
+  }
+
+  /* interest部分 */
+  .photos {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    height: 150px;
+    border-radius: 15px;
+  }
+
+  .banner-ill1 {
+    display: none;
+  }
+
+  .banner-ill2 {
+    display: none;
+  }
+
+  .contact-ill1 {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  /* 手機  */
+  /* banner部分 */
+  .birds ,.birds2 {
+    display: none;
+  }
+  #banner {
+    height: 400px;
+    position: relative;
+  }
+
+  #banner .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sun {
+    left: 10%;
+    top: 0%;
+  }
+
+  /* about部分 */
+  #about>.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-picture {
+    width: 80%;
+    margin: auto;
+    height: auto;
+  }
+
+  .discription {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    text-align: justify;
+  }
+
+  .photo2 {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+  }
+
+  #experience h2 {
+    font-size: 30px;
+  }
+
+  /* .experience-work-list:hover {
+  } */
+  .interest-ill2 {
+    display: none;
+  }
+
+  /* contact部分 */
+  #contact .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left-contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-contact p {
+    font-size: 20px;
+  }
+
+  .left-contact a {
+    font-size: 50px;
+  }
+
+  .right-contact {
+    width: 100%;
+  }
+
+  .about-ill1 {
+    display: none;
+  }
+
+  .interest-illustration1 {
+    display: none;
+  }
+
+  .left-contact {
+    padding-top: 100px;
+  }
+}
+
+/* banner小動畫 */
+.banner-illustration {
+  transform: translateX(-100%);
+  animation: slideInLeft 3s ease-out forwards;
+}
+
+.banner-illustration2 {
+  transform: translateX(100%);
+  animation: slideInRight 3s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0);
+  }
+}
